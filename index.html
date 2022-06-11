@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>BookShelf</title>
+  </head>
+  <body>
+    <header class="hero">
+      <h1 class="hero-title">Bookshelf</h1>
+    </header>
+    <section class="container">
+      <div class="card width-form form-post shadow">
+        <form name="form-add">
+          <legend>Add Book</legend>
+          <div class="form">
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Title.." />
+          </div>
+          <div class="form">
+            <label>Author</label>
+            <input type="text" name="author" placeholder="Author.." />
+          </div>
+          <div class="form">
+            <label>Release Book</label>
+            <input
+              type="text"
+              name="year"
+              maxlength="4"
+              placeholder="Year..."
+            />
+          </div>
+          <div class="form-btn">
+            <button class="btn btn-primary shadow" type="submit">
+              Add Book
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="wrapper-search form-post">
+      <div class="search">
+        <label>Search</label>
+        <input type="search" data-search placeholder="Title..." />
+        </div>
+      </div>
+    </section>
+    <section class="container-card width-form">
+      <h3>Belum selesai dibaca</h3>
+      <div id="list-book"></div>
+    </section>
+    <section class="container-card width-form">
+      <h3>Selesai dibaca</h3>
+      <div id="completed-book"></div>
+    </section>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
